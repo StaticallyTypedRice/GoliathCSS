@@ -8,7 +8,6 @@ Simple StyleSheets for JavaFX
 ---
 ## Adding
 
-```
 Import the jar file and do:
 `APP_SCENE.getStylesheets().add("goliath/css/Goliath-Magma.css");`
 ```
