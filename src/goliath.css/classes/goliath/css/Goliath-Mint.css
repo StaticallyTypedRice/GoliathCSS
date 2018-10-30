@@ -226,6 +226,10 @@
 {
     -fx-background-color: -fx-theme-background-alt;
 }
+.space-alt
+{
+    -fx-background-color: -fx-theme-background;
+}
 .combo-box
 {
     -fx-background-color: -fx-theme-background-alt;

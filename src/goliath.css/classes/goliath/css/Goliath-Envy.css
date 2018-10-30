@@ -1,11 +1,11 @@
 *
 {
-    -fx-theme-header: #444444;
-    -fx-theme-background: #3D3D3D;
-    -fx-theme-background-alt: #2E2E2E;
-    -fx-theme-selected: #F0544C;
-    -fx-theme-label-text: #D2D2D2;
-    -fx-theme-selectable-hover: #454545;
+    -fx-theme-header: #2D2D2D;
+    -fx-theme-background: #2D2D2D;
+    -fx-theme-background-alt: #232323;
+    -fx-theme-selected: #6DB332;
+    -fx-theme-label-text: #FFFFFF;
+    -fx-theme-selectable-hover: #3C3C3C;
     -fx-theme-tab-close-color: -fx-theme-label-text;
     -fx-theme-padding: 100px;
     -fx-theme-insets: 0px;
