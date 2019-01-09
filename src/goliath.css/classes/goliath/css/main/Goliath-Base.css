@@ -1,22 +1,24 @@
 .root
 {
-    -fx-theme-header: #323232;
+    -fx-theme-header: #2D2D2D;
     -fx-theme-background: #2D2D2D;
     -fx-theme-background-alt: #232323;
     -fx-theme-selected: #6DB332;
     -fx-theme-label-text: #FFFFFF;
-    -fx-theme-highlight: #3A8000;
     -fx-theme-selectable-hover: #3C3C3C;
     -fx-theme-tab-close-color: #2D2D2D;
     
     -fx-highlight-fill: -fx-theme-selected;
-    -fx-text-fill: white;
-    -fx-accent: -fx-theme-highlight;
-    -fx-text-fill: -fx-theme-label-text;
 }
-.title-pane, .title-pane > .label, .menubar
+
+.title-pane,
+.title-pane > .label,
+.menubar,
+.tool-bar,
+.split-pane,
+.split-pane > .split-pane-divider 
 {
-    -fx-background-color: -fx-theme-background;
+    -fx-background-color: -fx-theme-header;
 }
 .menubar
 {
@@ -97,7 +99,6 @@
 }
 .tool-bar
 {
-    -fx-background-color: -fx-theme-header;
     -fx-background-radius: 0;
 }
 .text-area .content
@@ -109,15 +110,13 @@
 /*
         BUTTON STUFF
 */
-.button,
-.toggle-button
+.button
 {
     -fx-background-radius: 0;
     -fx-background-color: -fx-theme-background-alt;
     -fx-text-fill: -fx-theme-label-text;
 }
-.button:hover,
-toggle-button:hover
+.button:hover
 {
     -fx-background-color: -fx-theme-selectable-hover;
 }
@@ -256,23 +255,31 @@ toggle-button:hover
 }
 .split-pane
 {
-    -fx-background-color: -fx-theme-header;
     -fx-border-radius: 0;
 }
 .split-pane > .split-pane-divider 
 {
-    -fx-background-color: -fx-theme-header;
     -fx-color: -fx-theme-header;
     
 }
-.corner, .table-view .filler
+.corner,
+.table-view .filler,
+.scroll-bar,
+.scroll-bar > .decrement-button,
+.scroll-bar > .increment-button,
+.scroll-bar > .thumb,
+.scroll-bar > .thumb:hover,
+.slider > .thumb
 {
-    -fx-background-color: -fx-theme-background;
+    -fx-background-color: -fx-theme-background; 
+}
+.corner,
+.table-view .filler
+{
     -fx-border-color: -fx-theme-background;
 }
 .scroll-bar
 {
-    -fx-background-color: -fx-theme-background;
     -fx-background-radius: 0;
     -fx-border-radius: 0;
 }
@@ -282,18 +289,12 @@ toggle-button:hover
 }
 .scroll-bar > .decrement-button, .scroll-bar > .increment-button
 {
-    -fx-background-color: -fx-theme-background;
     -fx-border-color: -fx-theme-background;
 }
 .scroll-bar > .thumb
 {
     -fx-background-radius: 0;
-    -fx-background-color: -fx-theme-background; 
     -fx-border-color: -fx-theme-background-alt;
-}
-.scroll-bar > .thumb:hover
-{
-    -fx-background-color: -fx-theme-background; 
 }
 .scroll-bar > .thumb:pressed
 {
@@ -333,7 +334,6 @@ toggle-button:hover
 {
     -fx-border-radius: 20;
     -fx-border-color: -fx-theme-background-alt;
-    -fx-background-color: -fx-theme-background;
 }
 .slider > .thumb:pressed
 {
